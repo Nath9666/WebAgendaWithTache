@@ -19,10 +19,10 @@ window.addEventListener('DOMContentLoaded',()=>{
     foot.innerHTML='<div class="reseau"><a href="https://fr-fr.facebook.com" target="_blank">        <img src="../images/logo_facebook.jpg" alt="">        <span>Facebook</span>    </a>    <a href="https://www.instagram.com" target="_blank">        <img src="../images/logo_inta.webp" alt="">        <span>Instagram</span>    </a>    <a href="https://www.linkedin.com" target="_blank">        <img src="../images/logo_linkedln.png" alt="">        <span>Linkedln</span>    </a>    <a href="https://twitter.com/?lang=fr" target="_blank">        <img src="../images/logo_twitter.png" alt="">        <span>Twitter</span>    </a></div>  '  
     console.log(document.cookie)
     const event = new Date(1993, 6, 28, 14, 39, 7);
+    var DateDebut= new Date(2022,05,18,17,00,3)
 
     console.log(event.toString());
     // expected output: Wed Jul 28 1993 14:39:07 GMT+0200 (CEST)
-    // (note: your timezone may vary)
 
     console.log(event.toDateString());
     // expected output: Wed Jul 28 1993
