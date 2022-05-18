@@ -14,7 +14,7 @@ window.addEventListener('DOMContentLoaded',()=>{
             document.getElementById("ht").style.backgroundColor="white"
         }
     })
-
+    
     var foot =document.getElementById("footer")
     foot.innerHTML='<div class="reseau"><a href="https://fr-fr.facebook.com" target="_blank">        <img src="../images/logo_facebook.jpg" alt="">        <span>Facebook</span>    </a>    <a href="https://www.instagram.com" target="_blank">        <img src="../images/logo_inta.webp" alt="">        <span>Instagram</span>    </a>    <a href="https://www.linkedin.com" target="_blank">        <img src="../images/logo_linkedln.png" alt="">        <span>Linkedln</span>    </a>    <a href="https://twitter.com/?lang=fr" target="_blank">        <img src="../images/logo_twitter.png" alt="">        <span>Twitter</span>    </a></div>  '  
     console.log(document.cookie)
