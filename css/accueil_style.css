@@ -11,7 +11,7 @@
     --priary-color:black;
     --second-color: rgba(255, 247, 236,2);
     --third-color:white;
-    --priary-color-low-transparent:rgba(75, 75, 75, .5);
+    --priary-color-low-transparent:rgba(75, 75, 75, .7);
     --forth-color:rgba(255, 255, 255, .5);
     --linear-color:linear-gradient(var(--forth-color), var(--priary-color-low-transparent))
 }
