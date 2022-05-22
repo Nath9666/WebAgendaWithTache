@@ -12,10 +12,44 @@
 <body>
     <header id="header">
     </header>
-    
+
     <div class="content">
         <form>
+            <label>Nom</label>
+            <input type="text" id="type" placeholder="Quel incroyable événement" required>
+            <br>
+            <label>Type</label>
+            <input type="radio" id="evenement" value="evenement">Événement
+            <input type="radio" id="tache" value="tache">Tâche
+            <br>
+            <label>Date de début</label>
+            <input type="date" id="dateDebut">
+            <label>Date de fin</label>
+            <input type="date" id="dateFin">
+            <br>
+            <label>Catégorie</label>
+            <select name="categorie" id="categorie">
+                <option>Maison</option>
+                <option>Travail</option>
+                <option>Personnel</option>
+                <option>Sport</option>
+                <option>Association</option>
+                <option>Loisir</option>
+                <option>Famille</option>
+            </select>
+            <br>
+            <input type="submit" id="enregistrer" value="Enregistrer">
+            <input type="reset" id="annuler" value="Annuler">
         </form>
+        <table class="tableau">
+            <tr>
+                <th>Nom</th>
+                <th>Type</th>
+                <th>Date de début</th>
+                <th>Date de fin</th>
+                <th>Catégorie</th>
+            </tr>
+        </table>
     </div>
 
     <footer id="footer">
