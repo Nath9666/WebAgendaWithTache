@@ -5,8 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5.0, minimum-scale=0.86">
     <title>Calentask</title>
-    <link rel="stylesheet" href="../css/accueil_style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/agenda_style.css">
     <script type="text/javascript" defer src="../js/script.js"></script>
+    <script type="text/javascript" defer src="../js/agenda_script.js"></script>
+    <script type="text/javascript" src="../data_agenda.json"></script>
 </head>
 
 <body>
@@ -19,11 +22,33 @@
             <button id="semaine">Semaine</button>
             <button id="mois">Mois</button>
         </div>
+    </div>
 
-        <div id="content">
+    <div class="container">
+        <div class="calendar">
+            <div class="mouth">
+                <button id="before">⬅️</button>
+                <div class="date">
+                    <h3></h3>
+                    <p></p>
+                </div>
+                <button id="next">➡️</button>
+            </div>
+            <div class="weekdays">
+                <div>Dim</div>
+                <div>Lun</div>
+                <div>Mar</div>
+                <div>Mer</div>
+                <div>Jeu</div>
+                <div>Ven</div>
+                <div>Sam</div>
 
+            </div>
+            <div class="days">
+            </div>
         </div>
     </div>
+    
 
     <footer id="footer">
     </footer>

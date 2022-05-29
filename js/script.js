@@ -42,25 +42,5 @@ window.addEventListener('DOMContentLoaded', () => {
             document.getElementById("ht").style.backgroundColor = "white"
         }
     })
-
-    
-
-
-    var Tableau = document.getElementById("tableau_agenda")
-    if (Tableau != null){
-        var button_jour=document.getElementById("jour")
-        var button_semaine = document.getElementById("semaine")
-        var button_mois = document.getElementById("mois")
-
-        const date = new Date();
-
-        console.log(date)
-        date.setDate(10)
-        console.log(date)
-
-    }
-
-
-    
 })
 

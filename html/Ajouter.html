@@ -5,8 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5.0, minimum-scale=0.86">
     <title>Calentask</title>
-    <link rel="stylesheet" href="../css/accueil_style.css">
+    <link rel="stylesheet" href="../css/ajouter_style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <script type="text/javascript" defer src="../js/script.js"></script>
+    <script type="text/javascript" defer src="../js/ajouter_script.js"></script>
 </head>
 
 <body>
@@ -14,21 +16,25 @@
     </header>
 
     <div class="content">
+        <h2>Ajouter un nouvel événement ou une nouvelle tâche</h2>
         <form>
             <label>Nom</label>
-            <input type="text" id="type" placeholder="Quel incroyable événement" required>
+            <input type="text" id="nomEntree" class="entree" placeholder="Quel incroyable événement" required>
             <br>
             <label>Type</label>
-            <input type="radio" id="evenement" value="evenement">Événement
-            <input type="radio" id="tache" value="tache">Tâche
+            <input type="radio" id="evenement" value="evenement" name="entree" checked="true">
+            <label for="evenement">Événement</label>
+            <input type="radio" id="tache" value="tache" name="entree">
+            <label for="tache">Tâche</label>
             <br>
             <label>Date de début</label>
-            <input type="date" id="dateDebut">
+            <input type="date" id="dateDebut" class="entree">
+            <br>
             <label>Date de fin</label>
-            <input type="date" id="dateFin">
+            <input type="date" id="dateFin" class="entree">
             <br>
             <label>Catégorie</label>
-            <select name="categorie" id="categorie">
+            <select name="categorie" id="categorie" class="entree">
                 <option>Maison</option>
                 <option>Travail</option>
                 <option>Personnel</option>
@@ -38,17 +44,27 @@
                 <option>Famille</option>
             </select>
             <br>
-            <input type="submit" id="enregistrer" value="Enregistrer">
-            <input type="reset" id="annuler" value="Annuler">
         </form>
-        <table class="tableau">
-            <tr>
-                <th>Nom</th>
-                <th>Type</th>
-                <th>Date de début</th>
-                <th>Date de fin</th>
-                <th>Catégorie</th>
-            </tr>
+        <!-- On sort les boutons du form, sinon la page se recharge à chaque appuie dessus-->
+        <div class="validerEntree">
+            <button id="enregistrer" class="boutonAjouter">Enregistrer</button>
+            <button id="annuler" class="boutonAjouter">Annuler</button>
+        </div>
+        
+        <h2>Voici la liste des vos événements et vos tâches</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Check</th>
+                    <th>Nom</th>
+                    <th>Type</th>
+                    <th>Date de début</th>
+                    <th>Date de fin</th>
+                    <th>Catégorie</th>
+                </tr>
+            </thead>
+        <tbody id="EntreeTbody">
+        </tbody>
         </table>
     </div>
 
